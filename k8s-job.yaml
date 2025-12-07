@@ -1,0 +1,35 @@
+# k8s-job.yaml
+# Demonstrates deployment for a batch processing workload.
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: traffic-detector-job
+  labels:
+    app: traffic-detector
+spec:
+  # The job runs to completion and then stops.
+  # The output file (detected_traffic_output.mp4) will be inside the container.
+  # In a real-world scenario, you would mount a Volume (like S3/GCS or a Persistent Volume)
+  # to save the output file outside the container.
+  template:
+    metadata:
+      labels:
+        app: traffic-detector
+    spec:
+      containers:
+      - name: traffic-detector
+        # Replace 'YOUR_DOCKERHUB_USERNAME/traffic-ai-pipeline:latest'
+        # with the image name you push via CI/CD.
+        image: your-dockerhub-username/traffic-ai-pipeline:latest 
+        imagePullPolicy: Always
+        # Resource requests demonstrate knowledge of resource management
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "1000m"
+            memory: "2Gi"
+      restartPolicy: OnFailure # Essential for a Job: restart only if the container fails, not for a successful exit.
+  backoffLimit: 4 # Maximum number of retries before marking the job as failed

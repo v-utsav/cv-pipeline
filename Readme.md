@@ -14,12 +14,12 @@ The project demonstrates core competencies in optimizing and automating an **AI 
 
 ## Technology Stack
 
-| Component | Technology | Role in Pipeline | Alignment with Job Requirements |
-| :--- | :--- | :--- | :--- |
-| **Scripting** | **Python 3.12** | Core implementation of the detection logic. | **Excellent skills in Python** |
-| **Containerization** | **Docker** | Creates a standardized, reproducible execution environment. | **Automate and optimize performance** |
-| **Orchestration** | **Kubernetes (K8s) Job** | Defines the batch workload for seamless, state-of-the-art cloud deployment. | **Deepen the integration of our software into a state-of-the-art cloud computing platform** |
-| **Automation** | **GitHub Actions** | Implements Continuous Integration (CI) for automated build and push to a container registry. | **Automate and optimize the performance** |
+| Component | Technology | Role in Pipeline |
+| :--- | :--- | :--- |
+| **Scripting** | **Python 3.12** | Core implementation of the detection logic. |
+| **Containerization** | **Docker** | Creates a standardized, reproducible execution environment. |
+| **Orchestration** | **Kubernetes (K8s) Job** | Defines the batch workload for seamless, state-of-the-art cloud deployment. |
+| **Automation** | **GitHub Actions** | Implements Continuous Integration (CI) for automated build and push to a container registry. |
 
 ---
 

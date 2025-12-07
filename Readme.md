@@ -1,4 +1,4 @@
-# 🚦 Computer Vision Traffic Pipeline (CV-Pipeline)
+# Computer Vision Traffic Pipeline (CV-Pipeline)
 
 This repository contains a containerized batch processing application for real-time traffic object detection in video streams, built using **Python** and **YOLOv8**.
 
@@ -6,13 +6,13 @@ The project demonstrates core competencies in optimizing and automating an **AI 
 
 ---
 
-## ✨ Project Highlights
+## Project Highlights
 
 * **Application:** Object detection on video streams, focusing on cars, buses, and trucks (classes 2, 5, 7 from COCO dataset).
 * **Core Technology:** `ultralytics` (YOLOv8n) for lightweight, high-performance inference.
 * **Goal:** Serve as a proof-of-concept for a scalable, automated AI microservice suitable for deployment in an enterprise cloud environment.
 
-## 🛠️ Technology Stack Demonstrated
+## Technology Stack
 
 | Component | Technology | Role in Pipeline | Alignment with Job Requirements |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +23,7 @@ The project demonstrates core competencies in optimizing and automating an **AI 
 
 ---
 
-## 🏗️ Project Structure & Execution
+## Project Structure & Execution
 
 ### 1. The Core Script: `detect_traffic.py`
 
